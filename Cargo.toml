@@ -1,12 +1,14 @@
 [package]
-name = "c99"
-version = "0.1.1"
-authors = ["Vojtech Kral <vojtech@kral.hk>"]
+name = "stdint"
+version = "0.1.0"
+authors = ["Markus Mayer <widemeadows@gmail.com", "Vojtech Kral <vojtech@kral.hk>"]
 license = "BSD-2-Clause"
-
-description = "C99 types for easier interop"
-homepage = "https://github.com/vojtechkral/rust-c99"
-repository = "https://github.com/vojtechkral/rust-c99"
+description = "C99 stdint types for easier interop"
+homepage = "https://github.com/sunsided/stdint-rs"
+repository = "https://github.com/sunsided/stdint-rs"
+readme = "README.md"
+keywords = ["C99", "types", "stdint"]
+categories = ["hardware-support"]
 
 build = "build.rs"
 
