@@ -1,7 +1,23 @@
 ## stdint
 
 Provides C99 integer types such as `uint_fast16_t`, `uint_least16_t` etc. for interfacing with
-C libraries that use them. Inspired by Vojtech Kral's [C99](https://github.com/vojtechkral/rust-c99) crate.
+C libraries that use them in both standard and `no_std` environments. Inspired by Vojtech Kral's [C99](https://github.com/vojtechkral/rust-c99) crate.
+
+The library defaults to use the `std` crate. You can therefore
+simply add the dependency to your `Cargo.toml` file:
+
+```toml
+[dependencies]
+stdint = "*"
+```
+
+To use the library in `no_std` environment, disable the use of
+default features:
+
+```toml
+[dependencies]
+stdint = { version = "*", default-features = false }
+```
 
 Note that the specific type aliases depend on your target architecture. On [docs.rs](https://docs.rs/stdint/0.1.0/stdint/type.int_fast16_t.html),
 the `int_fast16_t` type is currently shown as aliased to an `std::ffi::c_long`; this is an artifact
@@ -24,6 +40,12 @@ fn int16() {
     assert!(size_of::<uint_least16_t>() >= 2);
     assert!(size_of::<uint_fast16_t>() >= 2);
 }
+```
+
+To execute the tests in `no_std` mode, run
+
+```shell
+$ cargo test --no-default-features
 ```
 
 ### Types of defined sizes
