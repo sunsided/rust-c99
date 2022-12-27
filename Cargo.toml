@@ -1,6 +1,6 @@
 [package]
 name = "stdint"
-version = "0.2.0"
+version = "0.3.0-unstable"
 authors = ["Markus Mayer <widemeadows@gmail.com", "Vojtech Kral <vojtech@kral.hk>"]
 license = "BSD-2-Clause"
 description = "C99 stdint/stdio types for easier interop"

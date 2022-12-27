@@ -92,10 +92,10 @@ pub type intmax_t = internal::intmax_t;
 /// Maximum-width unsigned integer type.
 pub type uintmax_t = internal::uintmax_t;
 
-/// Signed integer type capable of holding a pointer to [`std::ffi::c_void`].
+/// Signed integer type capable of holding a pointer to [`std::ffi::c_void`] or [`core::ffi::c_void`].
 pub type intptr_t = internal::_intptr_t;
 
-/// Unsigned integer type capable of holding a pointer to [`std::ffi::c_void`].
+/// Unsigned integer type capable of holding a pointer to [`std::ffi::c_void`] or [`core::ffi::c_void`].
 pub type uintptr_t = internal::_uintptr_t;
 
 /// Constants for the types exported by this crate.
