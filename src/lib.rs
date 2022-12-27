@@ -128,10 +128,10 @@ pub mod consts {
     pub const UINT32_MAX: uint32_t = internal::UINT32_MAX as _;
 
     /// Minimum value of an object of type [`int64_t`].
-    pub const INT64_MIN: int64_t = internal::_INT64_MIN as _;
+    pub const INT64_MIN: int64_t = internal::RUST_STDINT_INT64_MIN as _;
 
     /// Maximum value of an object of type [`int64_t`].
-    pub const INT64_MAX: int64_t = internal::_INT64_MAX as _;
+    pub const INT64_MAX: int64_t = internal::RUST_STDINT_INT64_MAX as _;
 
     /// Maximum value of an object of type [`uint64_t`].
     pub const UINT64_MAX: uint64_t = uint64_t::MAX as _;
@@ -164,13 +164,13 @@ pub mod consts {
     pub const UINT_FAST32_MAX: uint_fast32_t = internal::UINT_FAST32_MAX as _;
 
     /// Minimum value of an object of type [`int_fast64_t`].
-    pub const INT_FAST64_MIN: int_fast64_t = internal::_INT_FAST64_MIN as _;
+    pub const INT_FAST64_MIN: int_fast64_t = internal::RUST_STDINT_INT_FAST64_MIN as _;
 
     /// Maximum value of an object of type [`int_fast64_t`].
-    pub const INT_FAST64_MAX: int_fast64_t = internal::_INT_FAST64_MAX as _;
+    pub const INT_FAST64_MAX: int_fast64_t = internal::RUST_STDINT_INT_FAST64_MAX as _;
 
     /// Maximum value of an object of type [`uint_fast64_t`].
-    pub const UINT_FAST64_MAX: uint_fast64_t = uint64_t::MAX as _;
+    pub const UINT_FAST64_MAX: uint_fast64_t = uint_fast64_t::MAX as _;
 
     /// Minimum value of an object of type [`int_least8_t`].
     pub const INT_LEAST8_MIN: int_least8_t = internal::INT_LEAST8_MIN as _;
@@ -200,13 +200,13 @@ pub mod consts {
     pub const UINT_LEAST32_MAX: uint_least32_t = internal::UINT_LEAST32_MAX as _;
 
     /// Minimum value of an object of type [`int_least64_t`].
-    pub const INT_LEAST64_MIN: int_least64_t = internal::_INT_LEAST64_MIN as _;
+    pub const INT_LEAST64_MIN: int_least64_t = internal::RUST_STDINT_INT_LEAST64_MIN as _;
 
     /// Maximum value of an object of type [`int_least64_t`].
-    pub const INT_LEAST64_MAX: int_least64_t = internal::_INT_LEAST64_MAX as _;
+    pub const INT_LEAST64_MAX: int_least64_t = internal::RUST_STDINT_INT_LEAST64_MAX as _;
 
     /// Maximum value of an object of type [`uint_least64_t`].
-    pub const UINT_LEAST64_MAX: uint_least64_t = uint64_t::MAX as _;
+    pub const UINT_LEAST64_MAX: uint_least64_t = uint_least64_t::MAX as _;
 
     /// Minimum value of an object of type [`intptr_t`].
     pub const INTPTR_MAX: intptr_t = internal::INTPTR_MAX as _;
@@ -218,10 +218,10 @@ pub mod consts {
     pub const UINTPTR_MAX: uintptr_t = internal::UINTPTR_MAX as _;
 
     /// Minimum value of an object of type [`intmax_t`].
-    pub const INTMAX_MAX: intmax_t = internal::_INTMAX_MAX as _;
+    pub const INTMAX_MAX: intmax_t = internal::RUST_STDINT_INTMAX_MAX as _;
 
     /// Maximum value of an object of type [`intmax_t`].
-    pub const INTMAX_MIN: intmax_t = internal::_INTMAX_MIN as _;
+    pub const INTMAX_MIN: intmax_t = internal::RUST_STDINT_INTMAX_MIN as _;
 
     /// Maximum value of an object of type [`uintmax_t`].
     pub const UINTMAX_MAX: uintmax_t = uintmax_t::MAX as _;
