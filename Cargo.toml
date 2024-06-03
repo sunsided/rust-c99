@@ -1,6 +1,6 @@
 [package]
 name = "stdint"
-version = "0.3.0-unstable"
+version = "1.0.0"
 authors = ["Markus Mayer <widemeadows@gmail.com>", "Vojtech Kral <vojtech@kral.hk>"]
 license = "BSD-2-Clause"
 description = "C99 stdint/stdio types for easier interop"
@@ -10,6 +10,7 @@ readme = "README.md"
 keywords = ["C99", "types", "stdint"]
 categories = ["hardware-support", "no-std"]
 build = "build.rs"
+edition = "2021"
 rust-version = "1.70.0"
 
 [lib]
