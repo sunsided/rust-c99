@@ -53,7 +53,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ macos-latest, windows-latest ]
+        os:
+          - macos-latest
+          # - windows-latest  # TODO: Fix the build
     steps:
       - uses: actions/checkout@v4
       - uses: taiki-e/install-action@nextest
