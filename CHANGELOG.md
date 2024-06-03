@@ -9,7 +9,7 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Internal
 
-- Set Rust MSRV to `1.70.0` and Rust Edition to `2021`.
+- Set MSRV to `1.70.0` and Rust Edition to `2021`.
 - Added CI/CD integration tests and bumped version to stable `1.0.0`.
 
 ## [0.2.0] - 2022-12-27
