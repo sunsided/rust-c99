@@ -2,6 +2,11 @@
 #include <stdint.h>
 #include <limits.h>
 
+#if defined(_MSC_VER)
+#include <BaseTsd.h>
+typedef SSIZE_T ssize_t;
+#endif
+
 typedef size_t _size_t;
 typedef ssize_t _ssize_t;
 typedef intptr_t _intptr_t;
