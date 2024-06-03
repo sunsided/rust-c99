@@ -10,6 +10,7 @@ readme = "README.md"
 keywords = ["C99", "types", "stdint"]
 categories = ["hardware-support", "no-std"]
 build = "build.rs"
+rust-version = "1.70.0"
 
 [lib]
 crate-type = ["rlib"]
